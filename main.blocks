@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="pl^Cp%VrA_4~F]Du.ms,">mySprite</variable><variable type="KIND_SpriteKind" id="h,OmSR3=[5,W/@.ZvU]h">Player</variable><variable type="KIND_SpriteKind" id="ZK-Vd;B%;tD_JEDAiqG]">Projectile</variable><variable type="KIND_SpriteKind" id="fl/4kO8HmCt+{ax?yprn">Food</variable><variable type="KIND_SpriteKind" id=")IqrMkEwi{qoS%[QR8h!">Enemy</variable></variables><block type="pxt-on-start" id="2?:HZ^EeI5ikg|dr%bzV" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="Ogze/u;Q,er=p_n+gw2K"><field name="VAR" id="pl^Cp%VrA_4~F]Du.ms,">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="D.(uBUBB7HsLm!Rbo7Rw"><value name="img"><shadow type="screen_image_picker" id="kCGB5i^*)s9TQ#g?q7J!"><field name="img">img`
+. . . . . . 5 . 5 . . . . . . . 
+. . . . . f 5 5 5 f f . . . . . 
+. . . . f 1 5 2 5 1 6 f . . . . 
+. . . f 1 6 6 6 6 6 1 6 f . . . 
+. . . f 6 6 f f f f 6 1 f . . . 
+. . . f 6 f f d d f f 6 f . . . 
+. . f 6 f d f d d f d f 6 f . . 
+. . f 6 f d 3 d d 3 d f 6 f . . 
+. . f 6 6 f d d d d f 6 6 f . . 
+. f 6 6 f 3 f f f f 3 f 6 6 f . 
+. . f f d 3 5 3 3 5 3 d f f . . 
+. . f d d f 3 5 5 3 f d d f . . 
+. . . f f 3 3 3 3 3 3 f f . . . 
+. . . f 3 3 5 3 3 5 3 3 f . . . 
+. . . f f f f f f f f f f . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"kCGB5i^*)s9TQ#g?q7J!"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="JDD`Hvh);n-Cr,03Bt^t"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gamecountdown" id="v*A_M-b*^@{-fZ;p%(Zu"><value name="duration"><shadow type="math_number" id="6cA@^e124gcv^6t{Y3Zk"><field name="NUM">10</field></shadow></value></block></next></block></statement></block><block type="keyonevent" id="4A,a.+,DTZdCn)U$SmsI" x="-10" y="210"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="hudChangeScoreBy" id="LC=/k!q8oDI#ocruLUX6"><value name="value"><shadow type="math_number" id="%m9)N#I1K{z}zrxX|N2("><field name="NUM">1</field></shadow></value><next><block type="startEffectOnSprite" id="B3Tp#b7r_]Bb2rLm)iim"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.spray</field><value name="sprite"><block type="variables_get" id="2l|g.`:Mb1f9Z:N]}c@]"><field name="VAR" id="pl^Cp%VrA_4~F]Du.ms,">mySprite</field></block></value><value name="duration"><shadow type="timePicker" id="FBCZj%|b}@O@pcBc@T`!"><field name="ms">200</field></shadow></value></block></next></block></statement></block></xml>
